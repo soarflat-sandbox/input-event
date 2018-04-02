@@ -17,8 +17,12 @@
     crossorigin="anonymous"></script>
   <script>
     const $input = $('#input');
-    $input .on('input', function () {
+    $input.on('input', function () {
       console.log('onInput', $input.val());
+    });
+
+    $input.on('compositionend', function () {
+      console.log('compositionend', $input.val());
     });
   </script>
 </body>
