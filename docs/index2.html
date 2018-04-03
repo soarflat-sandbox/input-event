@@ -6,41 +6,14 @@
 <title>Title</title>
 </head>
 <body>
-  <h1>jquery-3.3.1</h1>
+  <h1>jquery-1.2.4</h1>
   <input type="text" id="input">
 
   <p>text</p>
 
   <input type="text">
 
-  <h1>jquery-1.2.4</h1>
-  <input type="text" id="input2">
-
-  <p>text</p>
-
-  <input type="text">
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script>
-    const $input = $('#input');
-    $input.on('input', function (e) {
-      console.log(e);
-      console.log('onInput', $input.val());
-    });
-
-    $input.on('compositionend', function () {
-      console.log('compositionend', $input.val());
-    });
-
-    $ = undefined;
-  </script>
-
-  <script
-    src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script>
     const $input = $('#input');
     $input.on('input', function (e) {
@@ -52,7 +25,5 @@
       console.log('compositionend', $input.val());
     });
   </script>
-
-  <!--1.12.4-->
 </body>
 </html>
